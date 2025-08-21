@@ -205,19 +205,73 @@
                             </template>
                         </div>
 
-                        <!-- Play Button -->
+                        <!-- Audio Controls -->
                         <div 
                             v-motion
                             :initial="{ opacity: 0, scale: 0.8 }"
                             :visible-once="{ opacity: 1, scale: 1, transition: { delay: 720, duration: 400, ease: 'backOut' } }"
-                            class="mt-6 flex justify-center"
+                            class="mt-6 space-y-4"
                         >
-                            <button @click="togglePlay"
-                                class="bg-burgundy hover:bg-burgundy-dark text-white rounded-full w-12 h-12 flex items-center justify-center transition-all duration-200 hover:scale-110"
+                            <!-- Play Controls Row -->
+                            <div class="flex justify-center items-center gap-4">
+                                <!-- Seek Backward Button -->
+                                <button 
+                                    v-motion
+                                    :initial="{ opacity: 0, x: -20 }"
+                                    :visible-once="{ opacity: 1, x: 0, transition: { delay: 800, duration: 300, ease: 'easeOut' } }"
+                                    @click="seekBackward"
+                                    class="bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full w-10 h-10 flex items-center justify-center transition-all duration-200 hover:scale-110 hover:shadow-md"
+                                >
+                                    <img src="/Images/seekBackwardFive.svg" alt="Seek backward 5s" class="w-5 h-5" />
+                                </button>
+
+                                <!-- Play/Pause Button -->
+                                <button 
+                                    v-motion
+                                    :initial="{ opacity: 0, scale: 0.8 }"
+                                    :visible-once="{ opacity: 1, scale: 1, transition: { delay: 840, duration: 300, ease: 'backOut' } }"
+                                    @click="togglePlay"
+                                    class="bg-burgundy hover:bg-burgundy-dark text-white rounded-full w-12 h-12 flex items-center justify-center transition-all duration-200 hover:scale-110 hover:shadow-lg"
+                                >
+                                    <img v-if="!isPlaying" src="/Images/play.svg" alt="Play" class="w-6 h-6 filter brightness-0 invert" />
+                                    <img v-else src="/Images/pause.svg" alt="Pause" class="w-6 h-6 filter brightness-0 invert" />
+                                </button>
+
+                                <!-- Seek Forward Button -->
+                                <button 
+                                    v-motion
+                                    :initial="{ opacity: 0, x: 20 }"
+                                    :visible-once="{ opacity: 1, x: 0, transition: { delay: 880, duration: 300, ease: 'easeOut' } }"
+                                    @click="seekForward"
+                                    class="bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full w-10 h-10 flex items-center justify-center transition-all duration-200 hover:scale-110 hover:shadow-md"
+                                >
+                                    <img src="/Images/seekForwardFive.svg" alt="Seek forward 5s" class="w-5 h-5" />
+                                </button>
+                            </div>
+
+                            <!-- Speed Control -->
+                            <div 
+                                v-motion
+                                :initial="{ opacity: 0, y: 20 }"
+                                :visible-once="{ opacity: 1, y: 0, transition: { delay: 920, duration: 400, ease: 'easeOut' } }"
+                                class="flex items-center justify-center gap-3"
                             >
-                                <img v-if="!isPlaying" src="/Images/play.svg" alt="Play" class="w-6 h-6 filter brightness-0 invert" />
-                                <img v-else src="/Images/pause.svg" alt="Pause" class="w-6 h-6 filter brightness-0 invert" />
-                            </button>
+                                <span class="text-sm text-gray-600 font-medium">Speed:</span>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-xs text-gray-500">0.5x</span>
+                                    <input 
+                                        v-model="playbackSpeed"
+                                        @input="updatePlaybackSpeed"
+                                        type="range" 
+                                        min="0.5" 
+                                        max="2" 
+                                        step="0.25"
+                                        class="speed-slider w-24 h-2 rounded-lg appearance-none cursor-pointer transition-colors duration-200"
+                                    />
+                                    <span class="text-xs text-gray-500">2x</span>
+                                </div>
+                                <span class="text-sm text-burgundy font-semibold min-w-[3rem]">{{ playbackSpeed }}x</span>
+                            </div>
                         </div>
                     </div>
 
@@ -260,6 +314,34 @@
                 </a>
             </div>
 
+            <!-- Footer Section -->
+            <div 
+                v-motion
+                :initial="{ opacity: 0, y: 40 }"
+                :visible-once="{ opacity: 1, y: 0, transition: { delay: 200, duration: 560, ease: 'easeOut' } }"
+                class="mt-20 pt-12 border-t border-gray-200 text-center"
+            >
+                <h2 
+                    v-motion
+                    :initial="{ opacity: 0, y: 20 }"
+                    :visible-once="{ opacity: 1, y: 0, transition: { delay: 360, duration: 480, ease: 'easeOut' } }"
+                    class="text-2xl font-bold text-gray-900 mb-4"
+                >
+                    Made By the Creators of Relight
+                </h2>
+                <p 
+                    v-motion
+                    :initial="{ opacity: 0, y: 15 }"
+                    :visible-once="{ opacity: 1, y: 0, transition: { delay: 520, duration: 480, ease: 'easeOut' } }"
+                    class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed"
+                >
+                    We're same husband and wife team that make the 
+                    <a href="https://relight.app" target="_blank" rel="noopener noreferrer" class="text-burgundy hover:underline font-medium">Relight study app</a>. 
+                    If Relight Audio interests you, you might want to 
+                    <a href="https://www.youtube.com/watch?v=Y2N-vh1Bh0I" target="_blank" rel="noopener noreferrer" class="text-burgundy hover:underline font-medium">learn more about that project.</a>
+                </p>
+            </div>
+
         </div>
     </section>
 </template>
@@ -275,6 +357,7 @@ const isPlaying = ref(false)
 const currentWordIndex = ref(-1)
 const audio = ref<HTMLAudioElement | null>(null)
 const timingData = ref<any>({})
+const playbackSpeed = ref(1)
 let animationFrame: number | null = null
 
 // Load timing data
@@ -350,6 +433,21 @@ const togglePlay = () => {
     }
 }
 
+const seekBackward = () => {
+    if (!audio.value) return
+    audio.value.currentTime = Math.max(0, audio.value.currentTime - 5)
+}
+
+const seekForward = () => {
+    if (!audio.value) return
+    audio.value.currentTime = Math.min(audio.value.duration || 0, audio.value.currentTime + 5)
+}
+
+const updatePlaybackSpeed = () => {
+    if (!audio.value) return
+    audio.value.playbackRate = playbackSpeed.value
+}
+
 const openModal = () => {
     emit('openModal')
 }
@@ -383,5 +481,66 @@ const openModal = () => {
     transform: scale(1.06);
     transition: all 0.2s ease;
     display: inline-block;
+}
+
+/* Speed Slider Styling */
+.speed-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #6b7280;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid #374151;
+    cursor: pointer;
+}
+
+.speed-slider::-webkit-slider-track {
+    background: #6b7280;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid #374151;
+}
+
+.speed-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #701828;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.speed-slider::-webkit-slider-thumb:hover {
+    background: #5a1320;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.speed-slider::-moz-range-track {
+    background: #6b7280;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid #374151;
+}
+
+.speed-slider::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #701828;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.speed-slider::-moz-range-thumb:hover {
+    background: #5a1320;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 </style>
