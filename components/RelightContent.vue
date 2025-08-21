@@ -338,7 +338,7 @@
                     We're same husband and wife team that make the 
                     <a href="https://relight.app" target="_blank" rel="noopener noreferrer" class="text-burgundy hover:underline font-medium">Relight study app</a>. 
                     If Relight Audio interests you, you might want to 
-                    <a href="https://www.youtube.com/watch?v=Y2N-vh1Bh0I" target="_blank" rel="noopener noreferrer" class="text-burgundy hover:underline font-medium">learn more about that project.</a>
+                    <a href="https://www.youtube.com/watch?v=Y2N-vh1Bh0I" target="_blank" rel="noopener noreferrer" class="text-burgundy hover:underline font-medium">learn more about Relight study.</a>
                 </p>
             </div>
 
