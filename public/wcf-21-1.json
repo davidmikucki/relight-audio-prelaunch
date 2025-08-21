@@ -1,0 +1,536 @@
+{
+  "unitId": "wcf-21-1",
+  "text": "The light of nature showeth that there is a God, who hath lordship and sovereignty over all; is good, and doeth good unto all; and is therefore to be feared, loved, praised, called upon, trusted in, and served with all the heart, and with all the soul, and with all the might. But the acceptable way of worshipping the true God is instituted by himself, and so limited to his own revealed will, that he may not be worshipped according to the imaginations and devices of men, or the suggestions of Satan, under any visible representations or any other way not prescribed in the Holy Scripture.",
+  "words": [
+    {
+      "word": "The ",
+      "startMs": 0,
+      "endMs": 340
+    },
+    {
+      "word": "light ",
+      "startMs": 340,
+      "endMs": 560
+    },
+    {
+      "word": "of ",
+      "startMs": 560,
+      "endMs": 660
+    },
+    {
+      "word": "nature ",
+      "startMs": 660,
+      "endMs": 920
+    },
+    {
+      "word": "showeth ",
+      "startMs": 920,
+      "endMs": 1360
+    },
+    {
+      "word": "that ",
+      "startMs": 1360,
+      "endMs": 1540
+    },
+    {
+      "word": "there ",
+      "startMs": 1540,
+      "endMs": 1680
+    },
+    {
+      "word": "is ",
+      "startMs": 1680,
+      "endMs": 1820
+    },
+    {
+      "word": "a ",
+      "startMs": 1820,
+      "endMs": 1960
+    },
+    {
+      "word": "God, ",
+      "startMs": 1960,
+      "endMs": 2260
+    },
+    {
+      "word": "who ",
+      "startMs": 2260,
+      "endMs": 2480
+    },
+    {
+      "word": "hath ",
+      "startMs": 2480,
+      "endMs": 2660
+    },
+    {
+      "word": "lordship ",
+      "startMs": 2660,
+      "endMs": 3140
+    },
+    {
+      "word": "and ",
+      "startMs": 3140,
+      "endMs": 3320
+    },
+    {
+      "word": "sovereignty ",
+      "startMs": 3320,
+      "endMs": 3680
+    },
+    {
+      "word": "over ",
+      "startMs": 3680,
+      "endMs": 3910
+    },
+    {
+      "word": "all; ",
+      "startMs": 3910,
+      "endMs": 4140
+    },
+    {
+      "word": "is ",
+      "startMs": 4140,
+      "endMs": 4580
+    },
+    {
+      "word": "good, ",
+      "startMs": 4580,
+      "endMs": 4820
+    },
+    {
+      "word": "and ",
+      "startMs": 4820,
+      "endMs": 5080
+    },
+    {
+      "word": "doeth ",
+      "startMs": 5080,
+      "endMs": 5320
+    },
+    {
+      "word": "good ",
+      "startMs": 5320,
+      "endMs": 5520
+    },
+    {
+      "word": "unto ",
+      "startMs": 5520,
+      "endMs": 5760
+    },
+    {
+      "word": "all; ",
+      "startMs": 5760,
+      "endMs": 6060
+    },
+    {
+      "word": "and ",
+      "startMs": 6260,
+      "endMs": 6400
+    },
+    {
+      "word": "is ",
+      "startMs": 6400,
+      "endMs": 6520
+    },
+    {
+      "word": "therefore ",
+      "startMs": 6520,
+      "endMs": 6800
+    },
+    {
+      "word": "to ",
+      "startMs": 6800,
+      "endMs": 7040
+    },
+    {
+      "word": "be ",
+      "startMs": 7040,
+      "endMs": 7200
+    },
+    {
+      "word": "feared, ",
+      "startMs": 7200,
+      "endMs": 7540
+    },
+    {
+      "word": "loved, ",
+      "startMs": 7740,
+      "endMs": 7980
+    },
+    {
+      "word": "praised, ",
+      "startMs": 8560,
+      "endMs": 8560
+    },
+    {
+      "word": "called ",
+      "startMs": 8740,
+      "endMs": 8900
+    },
+    {
+      "word": "upon, ",
+      "startMs": 8900,
+      "endMs": 9280
+    },
+    {
+      "word": "trusted ",
+      "startMs": 9460,
+      "endMs": 9740
+    },
+    {
+      "word": "in, ",
+      "startMs": 9740,
+      "endMs": 9980
+    },
+    {
+      "word": "and ",
+      "startMs": 10220,
+      "endMs": 10220
+    },
+    {
+      "word": "served ",
+      "startMs": 10220,
+      "endMs": 10500
+    },
+    {
+      "word": "with ",
+      "startMs": 10500,
+      "endMs": 10660
+    },
+    {
+      "word": "all ",
+      "startMs": 10660,
+      "endMs": 10820
+    },
+    {
+      "word": "the ",
+      "startMs": 10820,
+      "endMs": 10960
+    },
+    {
+      "word": "heart, ",
+      "startMs": 10960,
+      "endMs": 11120
+    },
+    {
+      "word": "and ",
+      "startMs": 11380,
+      "endMs": 11400
+    },
+    {
+      "word": "with ",
+      "startMs": 11400,
+      "endMs": 11540
+    },
+    {
+      "word": "all ",
+      "startMs": 11540,
+      "endMs": 11660
+    },
+    {
+      "word": "the ",
+      "startMs": 11660,
+      "endMs": 11860
+    },
+    {
+      "word": "soul, ",
+      "startMs": 11860,
+      "endMs": 12080
+    },
+    {
+      "word": "and ",
+      "startMs": 12320,
+      "endMs": 12340
+    },
+    {
+      "word": "with ",
+      "startMs": 12340,
+      "endMs": 12480
+    },
+    {
+      "word": "all ",
+      "startMs": 12480,
+      "endMs": 12600
+    },
+    {
+      "word": "the ",
+      "startMs": 12600,
+      "endMs": 12760
+    },
+    {
+      "word": "might. ",
+      "startMs": 12760,
+      "endMs": 12920
+    },
+    {
+      "word": "But ",
+      "startMs": 13740,
+      "endMs": 14180
+    },
+    {
+      "word": "the ",
+      "startMs": 14180,
+      "endMs": 14280
+    },
+    {
+      "word": "acceptable ",
+      "startMs": 14280,
+      "endMs": 14760
+    },
+    {
+      "word": "way ",
+      "startMs": 14760,
+      "endMs": 15020
+    },
+    {
+      "word": "of ",
+      "startMs": 15020,
+      "endMs": 15180
+    },
+    {
+      "word": "worshipping ",
+      "startMs": 15180,
+      "endMs": 15520
+    },
+    {
+      "word": "the ",
+      "startMs": 15520,
+      "endMs": 15700
+    },
+    {
+      "word": "true ",
+      "startMs": 15700,
+      "endMs": 15840
+    },
+    {
+      "word": "God ",
+      "startMs": 15840,
+      "endMs": 16160
+    },
+    {
+      "word": "is ",
+      "startMs": 16160,
+      "endMs": 16320
+    },
+    {
+      "word": "instituted ",
+      "startMs": 16320,
+      "endMs": 16820
+    },
+    {
+      "word": "by ",
+      "startMs": 16820,
+      "endMs": 17040
+    },
+    {
+      "word": "himself, ",
+      "startMs": 17040,
+      "endMs": 17560
+    },
+    {
+      "word": "and ",
+      "startMs": 17980,
+      "endMs": 18020
+    },
+    {
+      "word": "so ",
+      "startMs": 18020,
+      "endMs": 18240
+    },
+    {
+      "word": "limited ",
+      "startMs": 18240,
+      "endMs": 18540
+    },
+    {
+      "word": "to ",
+      "startMs": 18540,
+      "endMs": 18780
+    },
+    {
+      "word": "his ",
+      "startMs": 18780,
+      "endMs": 18940
+    },
+    {
+      "word": "own ",
+      "startMs": 18940,
+      "endMs": 19160
+    },
+    {
+      "word": "revealed ",
+      "startMs": 19160,
+      "endMs": 19540
+    },
+    {
+      "word": "will, ",
+      "startMs": 19540,
+      "endMs": 19900
+    },
+    {
+      "word": "that ",
+      "startMs": 20320,
+      "endMs": 20420
+    },
+    {
+      "word": "he ",
+      "startMs": 20420,
+      "endMs": 20520
+    },
+    {
+      "word": "may ",
+      "startMs": 20520,
+      "endMs": 20640
+    },
+    {
+      "word": "not ",
+      "startMs": 20640,
+      "endMs": 20880
+    },
+    {
+      "word": "be ",
+      "startMs": 20880,
+      "endMs": 21060
+    },
+    {
+      "word": "worshipped ",
+      "startMs": 21060,
+      "endMs": 21500
+    },
+    {
+      "word": "according ",
+      "startMs": 21500,
+      "endMs": 21720
+    },
+    {
+      "word": "to ",
+      "startMs": 21720,
+      "endMs": 22020
+    },
+    {
+      "word": "the ",
+      "startMs": 22020,
+      "endMs": 22140
+    },
+    {
+      "word": "imaginations ",
+      "startMs": 22140,
+      "endMs": 22880
+    },
+    {
+      "word": "and ",
+      "startMs": 22880,
+      "endMs": 23080
+    },
+    {
+      "word": "devices ",
+      "startMs": 23080,
+      "endMs": 23460
+    },
+    {
+      "word": "of ",
+      "startMs": 23460,
+      "endMs": 23680
+    },
+    {
+      "word": "men, ",
+      "startMs": 23680,
+      "endMs": 23960
+    },
+    {
+      "word": "or ",
+      "startMs": 24300,
+      "endMs": 24460
+    },
+    {
+      "word": "the ",
+      "startMs": 24460,
+      "endMs": 24560
+    },
+    {
+      "word": "suggestions ",
+      "startMs": 24560,
+      "endMs": 25000
+    },
+    {
+      "word": "of ",
+      "startMs": 25000,
+      "endMs": 25260
+    },
+    {
+      "word": "Satan, ",
+      "startMs": 25260,
+      "endMs": 25640
+    },
+    {
+      "word": "under ",
+      "startMs": 26000,
+      "endMs": 26140
+    },
+    {
+      "word": "any ",
+      "startMs": 26140,
+      "endMs": 26320
+    },
+    {
+      "word": "visible ",
+      "startMs": 26320,
+      "endMs": 26640
+    },
+    {
+      "word": "representations ",
+      "startMs": 26640,
+      "endMs": 27240
+    },
+    {
+      "word": "or ",
+      "startMs": 27240,
+      "endMs": 27840
+    },
+    {
+      "word": "any ",
+      "startMs": 27840,
+      "endMs": 28060
+    },
+    {
+      "word": "other ",
+      "startMs": 28060,
+      "endMs": 28300
+    },
+    {
+      "word": "way ",
+      "startMs": 28300,
+      "endMs": 28500
+    },
+    {
+      "word": "not ",
+      "startMs": 28500,
+      "endMs": 28760
+    },
+    {
+      "word": "prescribed ",
+      "startMs": 28760,
+      "endMs": 29160
+    },
+    {
+      "word": "in ",
+      "startMs": 29160,
+      "endMs": 29460
+    },
+    {
+      "word": "the ",
+      "startMs": 29460,
+      "endMs": 29560
+    },
+    {
+      "word": "Holy ",
+      "startMs": 29560,
+      "endMs": 29820
+    },
+    {
+      "word": "Scripture.",
+      "startMs": 29820,
+      "endMs": 30220
+    }
+  ]
+}
