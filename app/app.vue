@@ -1,5 +1,10 @@
 <template>
-  <div class="bg-white">
+  <div 
+    v-motion
+    :initial="{ opacity: 0 }"
+    :enter="{ opacity: 1, transition: { duration: 480, ease: 'easeOut' } }"
+    class="bg-white"
+  >
     <NuxtRouteAnnouncer />
     
     <!-- Hero Section -->
@@ -13,33 +18,58 @@
       }"
     >
       <div class="text-center px-6 max-w-4xl mx-auto">
-        <div
-          v-motion
-          :initial="{ opacity: 0, y: 50 }"
-          :enter="{ opacity: 1, y: 0, transition: { delay: 400, duration: 800 } }"
-          class="mb-8"
-        >
+        <div class="mb-8">
           <h1 class="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
-            Relight Audio
+            <span
+              v-motion
+              :initial="{ opacity: 0, y: 60, scale: 0.9 }"
+              :enter="{ opacity: 1, y: 0, scale: 1, transition: { delay: 160, duration: 800, ease: 'easeOut' } }"
+              class="inline-block"
+            >
+              Relight
+            </span>
+            <span>&nbsp;</span>
+            <span
+              v-motion
+              :initial="{ opacity: 0, y: 60, scale: 0.9 }"
+              :enter="{ opacity: 1, y: 0, scale: 1, transition: { delay: 400, duration: 800, ease: 'easeOut' } }"
+              class="inline-block"
+            >
+              Audio
+            </span>
           </h1>
-          <p class="text-xl md:text-2xl text-white mb-8 leading-relaxed max-w-3xl mx-auto">
+          <p 
+            v-motion
+            :initial="{ opacity: 0, y: 40 }"
+            :enter="{ opacity: 1, y: 0, transition: { delay: 480, duration: 640, ease: 'easeOut' } }"
+            class="text-xl md:text-2xl text-white mb-8 leading-relaxed max-w-3xl mx-auto"
+          >
             Listen to reformed audiobooks, sermons, confessions, and catechisms.
           </p>
         </div>
 
         <div
           v-motion
-          :initial="{ opacity: 0, y: 50 }"
-          :enter="{ opacity: 1, y: 0, transition: { delay: 600, duration: 800 } }"
+          :initial="{ opacity: 0, y: 40 }"
+          :enter="{ opacity: 1, y: 0, transition: { delay: 800, duration: 640, ease: 'easeOut' } }"
           class="flex flex-col sm:flex-row gap-6 justify-center items-center mt-10"
         >
           <button
+            v-motion
+            :initial="{ opacity: 0, scale: 0.9 }"
+            :enter="{ opacity: 1, scale: 1, transition: { delay: 960, duration: 480, ease: 'backOut' } }"
             @click="openModal"
-            class="bg-[#701828] hover:bg-[#5a1320] text-white font-semibold py-4 px-12 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-lg"
+            class="bg-[#701828] hover:bg-[#5a1320] text-white font-semibold py-4 px-12 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 text-lg"
           >
             Get Notified
           </button>
-          <a href="#relight-info" class="border-2 border-white text-white hover:bg-white hover:text-black font-semibold py-4 px-12 rounded-xl transition-all duration-300 text-lg">
+          <a 
+            v-motion
+            :initial="{ opacity: 0, scale: 0.9 }"
+            :enter="{ opacity: 1, scale: 1, transition: { delay: 1120, duration: 480, ease: 'backOut' } }"
+            href="#relight-info" 
+            class="border-2 border-white text-white hover:bg-white hover:text-black font-semibold py-4 px-12 rounded-xl transition-all duration-300 hover:scale-105 text-lg"
+          >
             Learn More
           </a>
         </div>
@@ -221,7 +251,8 @@ useHead({
   link: [
     { rel: 'stylesheet', href: 'https://use.typekit.net/eot2ome.css' },
     { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
-    { rel: 'canonical', href: 'https://relight-audio.com' }
+    { rel: 'canonical', href: 'https://relight-audio.com' },
+    { rel: 'icon', type: 'image/png', href: '/images/favicon.png' }
   ]
 })
 </script>

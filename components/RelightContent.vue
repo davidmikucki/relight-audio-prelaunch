@@ -3,14 +3,34 @@
         <div class="max-w-6xl mx-auto px-6">
 
             <!-- Main Title -->
-            <div class="text-center mb-16">
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <div 
+                v-motion
+                :initial="{ opacity: 0, y: 60 }"
+                :visible-once="{ opacity: 1, y: 0, transition: { duration: 640, ease: 'easeOut' } }"
+                class="text-center mb-16"
+            >
+                <h1 
+                    v-motion
+                    :initial="{ opacity: 0, y: 40, scale: 0.95 }"
+                    :visible-once="{ opacity: 1, y: 0, scale: 1, transition: { delay: 160, duration: 640, ease: 'easeOut' } }"
+                    class="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+                >
                     Relight <span class="text-burgundy">Audio</span>
                 </h1>
-                <h2 class="text-2xl md:text-3xl text-gray-700 mb-8">
+                <h2 
+                    v-motion
+                    :initial="{ opacity: 0, y: 30 }"
+                    :visible-once="{ opacity: 1, y: 0, transition: { delay: 320, duration: 560, ease: 'easeOut' } }"
+                    class="text-2xl md:text-3xl text-gray-700 mb-8"
+                >
                     Using AI Voices to Read Reformed Classics
                 </h2>
-                <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed text-left">
+                <p 
+                    v-motion
+                    :initial="{ opacity: 0, y: 20 }"
+                    :visible-once="{ opacity: 1, y: 0, transition: { delay: 480, duration: 480, ease: 'easeOut' } }"
+                    class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed text-left"
+                >
                     We’re leveraging the power of AI text-to-speech to take classic reformed books, sermons,
                     confessions, and catechisms—and turn them into something you can listen to anywhere. You can even
                     <strong>read-along</strong> with each word being highlighted as it’s spoken. <a
@@ -20,16 +40,31 @@
 
             <!-- How to Listen Section -->
             <div class="mb-20">
-                <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+                <h2 
+                    v-motion
+                    :initial="{ opacity: 0, y: 40 }"
+                    :visible-once="{ opacity: 1, y: 0, transition: { duration: 560, ease: 'easeOut' } }"
+                    class="text-3xl font-bold text-gray-900 mb-12 text-center"
+                >
                     How to Listen
                 </h2>
 
                 <!-- Three Cards Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
 
                     <!-- Free App Card -->
-                    <div class="bg-gray-50 rounded-xl p-8 text-center">
-                        <div class="mb-6">
+                    <div 
+                        v-motion
+                        :initial="{ opacity: 0, y: 50, scale: 0.95 }"
+                        :visible-once="{ opacity: 1, y: 0, scale: 1, transition: { delay: 80, duration: 480, ease: 'easeOut' } }"
+                        class="bg-gray-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow duration-300"
+                    >
+                        <div 
+                            v-motion
+                            :initial="{ opacity: 0, scale: 0.8 }"
+                            :visible-once="{ opacity: 1, scale: 1, transition: { delay: 240, duration: 400, ease: 'backOut' } }"
+                            class="mb-6"
+                        >
                             <div class="w-16 h-16 bg-burgundy rounded-full flex items-center justify-center mx-auto">
                                 <span class="material-icons text-white text-3xl">smartphone</span>
                             </div>
@@ -45,8 +80,18 @@
                     </div>
 
                     <!-- Library Card -->
-                    <div class="bg-gray-50 rounded-xl p-8 text-center">
-                        <div class="mb-6">
+                    <div 
+                        v-motion
+                        :initial="{ opacity: 0, y: 50, scale: 0.95 }"
+                        :visible-once="{ opacity: 1, y: 0, scale: 1, transition: { delay: 160, duration: 480, ease: 'easeOut' } }"
+                        class="bg-gray-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow duration-300"
+                    >
+                        <div 
+                            v-motion
+                            :initial="{ opacity: 0, scale: 0.8 }"
+                            :visible-once="{ opacity: 1, scale: 1, transition: { delay: 320, duration: 400, ease: 'backOut' } }"
+                            class="mb-6"
+                        >
                             <div class="w-16 h-16 bg-burgundy rounded-full flex items-center justify-center mx-auto">
                                 <span class="material-icons text-white text-3xl">local_library</span>
                             </div>
@@ -62,8 +107,18 @@
                     </div>
 
                     <!-- Paid Subscription -->
-                    <div class="bg-gray-50 rounded-xl p-8 text-center">
-                        <div class="mb-6">
+                    <div 
+                        v-motion
+                        :initial="{ opacity: 0, y: 50, scale: 0.95 }"
+                        :visible-once="{ opacity: 1, y: 0, scale: 1, transition: { delay: 240, duration: 480, ease: 'easeOut' } }"
+                        class="bg-gray-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow duration-300"
+                    >
+                        <div 
+                            v-motion
+                            :initial="{ opacity: 0, scale: 0.8 }"
+                            :visible-once="{ opacity: 1, scale: 1, transition: { delay: 400, duration: 400, ease: 'backOut' } }"
+                            class="mb-6"
+                        >
                             <div class="w-16 h-16 bg-burgundy rounded-full flex items-center justify-center mx-auto">
                                 <span class="material-icons text-white text-3xl">credit_card</span>
                             </div>
@@ -83,43 +138,83 @@
 
             <!-- Test Drive Section -->
             <div class="mb-20">
-                <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <div class="grid lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
 
                     <!-- Left Side - Explanation -->
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-6" id="testDrive">
+                    <div
+                        v-motion
+                        :initial="{ opacity: 0, x: -50 }"
+                        :visible-once="{ opacity: 1, x: 0, transition: { duration: 560, ease: 'easeOut' } }"
+                    >
+                        <h3 
+                            v-motion
+                            :initial="{ opacity: 0, y: 30 }"
+                            :visible-once="{ opacity: 1, y: 0, transition: { delay: 160, duration: 480, ease: 'easeOut' } }"
+                            class="text-2xl font-bold text-gray-900 mb-6" id="testDrive"
+                        >
                             Take a Short Test Drive
                         </h3>
-                        <p class="text-lg text-gray-600 leading-relaxed">
-                            The final interface isn’t fully built yet, but you can see the basic principle here. We also
-                            fully acknowledge this this isn’t nearly as good as if we were to pay a professional to read
-                            the resources. But we still think it’s useful, and we’re
+                        <p 
+                            v-motion
+                            :initial="{ opacity: 0, y: 20 }"
+                            :visible-once="{ opacity: 1, y: 0, transition: { delay: 320, duration: 480, ease: 'easeOut' } }"
+                            class="text-lg text-gray-600 leading-relaxed"
+                        >
+                            The final interface isn't fully built yet, but you can see the basic principle here. We also
+                            fully acknowledge this this isn't nearly as good as if we were to pay a professional to read
+                            the resources. But we still think it's useful, and we're
                             planning to give this same basic treatment to (eventually) dozens, if not hundreds of reformed
                             resources.
                         </p>
-                        <button @click="openModal"
-                            class="bg-[#701828] hover:bg-[#5a1320] text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-base mt-4">
+                        <button 
+                            v-motion
+                            :initial="{ opacity: 0, scale: 0.9 }"
+                            :visible-once="{ opacity: 1, scale: 1, transition: { delay: 480, duration: 400, ease: 'backOut' } }"
+                            @click="openModal"
+                            class="bg-[#701828] hover:bg-[#5a1320] text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-base mt-4"
+                        >
                             Get Notified
                         </button>
                     </div>
 
                     <!-- Right Side - Preview -->
-                    <div class="bg-gray-50 rounded-xl p-8">
-                        <h4 class="text-lg font-bold text-gray-900 mb-6">
-                            Westminster Confession of Faith Chapter 21, Article 1
+                    <div 
+                        v-motion
+                        :initial="{ opacity: 0, x: 50, scale: 0.95 }"
+                        :visible-once="{ opacity: 1, x: 0, scale: 1, transition: { delay: 240, duration: 560, ease: 'easeOut' } }"
+                        class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300"
+                    >
+                        <h4 
+                            v-motion
+                            :initial="{ opacity: 0, y: 20 }"
+                            :visible-once="{ opacity: 1, y: 0, transition: { delay: 400, duration: 400, ease: 'easeOut' } }"
+                            class="text-lg font-bold text-gray-900 mb-6"
+                        >
+                            Westminster Confession of Faith 21.1
                         </h4>
 
                         <!-- Text Content -->
-                        <div class="text-gray-700 leading-relaxed freightTextPro">
+                        <div 
+                            v-motion
+                            :initial="{ opacity: 0 }"
+                            :visible-once="{ opacity: 1, transition: { delay: 560, duration: 480, ease: 'easeOut' } }"
+                            class="text-gray-700 leading-relaxed freightTextPro"
+                        >
                             <template v-for="(wordData, index) in timingData.words" :key="index">
                                 <span :class="{ 'highlighted-word': currentWordIndex === index }">{{ wordData.word.trim() }}</span>{{ wordData.word.slice(wordData.word.trim().length) }}
                             </template>
                         </div>
 
                         <!-- Play Button -->
-                        <div class="mt-6 flex justify-center">
+                        <div 
+                            v-motion
+                            :initial="{ opacity: 0, scale: 0.8 }"
+                            :visible-once="{ opacity: 1, scale: 1, transition: { delay: 720, duration: 400, ease: 'backOut' } }"
+                            class="mt-6 flex justify-center"
+                        >
                             <button @click="togglePlay"
-                                class="bg-burgundy hover:bg-burgundy-dark text-white rounded-full w-12 h-12 flex items-center justify-center transition-colors duration-200">
+                                class="bg-burgundy hover:bg-burgundy-dark text-white rounded-full w-12 h-12 flex items-center justify-center transition-all duration-200 hover:scale-110"
+                            >
                                 <img v-if="!isPlaying" src="/Images/play.svg" alt="Play" class="w-6 h-6 filter brightness-0 invert" />
                                 <img v-else src="/Images/pause.svg" alt="Pause" class="w-6 h-6 filter brightness-0 invert" />
                             </button>
@@ -130,17 +225,37 @@
             </div>
 
             <!-- Support Section -->
-            <div class="text-center bg-gray-50 rounded-xl p-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            <div 
+                v-motion
+                :initial="{ opacity: 0, y: 60, scale: 0.95 }"
+                :visible-once="{ opacity: 1, y: 0, scale: 1, transition: { duration: 640, ease: 'easeOut' } }"
+                class="text-center bg-gray-50 rounded-xl p-12 hover:shadow-lg transition-shadow duration-300"
+            >
+                <h2 
+                    v-motion
+                    :initial="{ opacity: 0, y: 30 }"
+                    :visible-once="{ opacity: 1, y: 0, transition: { delay: 160, duration: 480, ease: 'easeOut' } }"
+                    class="text-3xl font-bold text-gray-900 mb-6"
+                >
                     Support the Development of This Project
                 </h2>
-                <p class="text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-                    If you’re as eager to see this project get off the ground as we are, you can volunteer to help
+                <p 
+                    v-motion
+                    :initial="{ opacity: 0, y: 20 }"
+                    :visible-once="{ opacity: 1, y: 0, transition: { delay: 320, duration: 480, ease: 'easeOut' } }"
+                    class="text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed"
+                >
+                    If you're as eager to see this project get off the ground as we are, you can volunteer to help
                     support its development ahead of time through the link below. We appreciate anything you can give,
-                    even if it’s just a dollar.
+                    even if it's just a dollar.
                 </p>
-                <a href="https://relight.app/support-us#waysToSupportArticle" target="_blank" rel="noopener noreferrer"
-                    class="inline-block bg-burgundy hover:bg-burgundy-dark text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-lg">
+                <a 
+                    v-motion
+                    :initial="{ opacity: 0, scale: 0.9 }"
+                    :visible-once="{ opacity: 1, scale: 1, transition: { delay: 480, duration: 400, ease: 'backOut' } }"
+                    href="https://relight.app/support-us#waysToSupportArticle" target="_blank" rel="noopener noreferrer"
+                    class="inline-block bg-burgundy hover:bg-burgundy-dark text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 hover:scale-105 text-lg"
+                >
                     Support Relight
                 </a>
             </div>

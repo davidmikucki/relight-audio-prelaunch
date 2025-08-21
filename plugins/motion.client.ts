@@ -1,9 +1,2 @@
-import { MotionPlugin } from '@vueuse/motion'
-
-export default defineNuxtPlugin({
-  name: 'motion',
-  parallel: true,
-  setup(nuxtApp) {
-    nuxtApp.vueApp.use(MotionPlugin)
-  }
-})
+// Motion plugin is now handled by @vueuse/motion/nuxt module
+// This file can be removed or kept empty
