@@ -9,12 +9,11 @@
     
     <!-- Hero Section -->
     <main 
-      class="relative flex items-center justify-center min-h-screen"
+      class="hero relative flex items-center justify-center min-h-screen"
       :style="{ 
-        backgroundImage: `url('/Images/relightAudioBackground.jpg')`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center top'
+        backgroundPosition: 'center 90%'
       }"
     >
       <div class="text-center px-6 max-w-4xl mx-auto">
@@ -277,6 +276,17 @@ useHead({
   
   .btn-secondary {
     @apply border-2 border-[#701828] text-[#701828] hover:bg-[#701828] hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300;
+  }
+}
+
+/* Hero background images (desktop vs mobile) */
+.hero {
+  background-image: url('/Images/relightAudioBackground.jpg');
+}
+
+@media (max-width: 640px) {
+  .hero {
+    background-image: url('/Images/relightAudioBackgroundMobile.jpg');
   }
 }
 </style>
