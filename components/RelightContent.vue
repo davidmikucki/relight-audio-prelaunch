@@ -13,7 +13,7 @@
                     v-motion
                     :initial="{ opacity: 0, y: 40, scale: 0.95 }"
                     :visible-once="{ opacity: 1, y: 0, scale: 1, transition: { delay: 160, duration: 640, ease: 'easeOut' } }"
-                    class="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+                    class="text-4xl md:text-5xl font-medium text-gray-900 mb-6"
                 >
                     Relight <span class="text-burgundy">Audio</span>
                 </h1>
@@ -44,7 +44,7 @@
                     v-motion
                     :initial="{ opacity: 0, y: 40 }"
                     :visible-once="{ opacity: 1, y: 0, transition: { duration: 560, ease: 'easeOut' } }"
-                    class="text-3xl font-bold text-gray-900 mb-12 text-center"
+                    class="text-3xl font-medium text-gray-900 mb-12 text-center"
                 >
                     How to Listen
                 </h2>
@@ -69,7 +69,7 @@
                                 <span class="material-icons text-white text-3xl">smartphone</span>
                             </div>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-4">
+                        <h3 class="text-xl font-medium text-gray-900 mb-4">
                             Through the App for Free
                         </h3>
                         <p class="text-gray-600 leading-relaxed text-left">
@@ -96,7 +96,7 @@
                                 <span class="material-icons text-white text-3xl">local_library</span>
                             </div>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-4">
+                        <h3 class="text-xl font-medium text-gray-900 mb-4">
                             Through Hoopla and Libby
                         </h3>
                         <p class="text-gray-600 leading-relaxed text-left">
@@ -123,7 +123,7 @@
                                 <span class="material-icons text-white text-3xl">credit_card</span>
                             </div>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-4">
+                        <h3 class="text-xl font-medium text-gray-900 mb-4">
                             Unlimited for $5 Monthly
                         </h3>
                         <p class="text-gray-600 leading-relaxed text-left">
@@ -150,7 +150,7 @@
                             v-motion
                             :initial="{ opacity: 0, y: 30 }"
                             :visible-once="{ opacity: 1, y: 0, transition: { delay: 160, duration: 480, ease: 'easeOut' } }"
-                            class="text-2xl font-bold text-gray-900 mb-6" id="testDrive"
+                            class="text-2xl font-medium text-gray-900 mb-6" id="testDrive"
                         >
                             Take a Short Test Drive
                         </h3>
@@ -171,7 +171,7 @@
                             :initial="{ opacity: 0, scale: 0.9 }"
                             :visible-once="{ opacity: 1, scale: 1, transition: { delay: 480, duration: 400, ease: 'backOut' } }"
                             @click="openModal"
-                            class="bg-[#701828] hover:bg-[#5a1320] text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-base mt-4"
+                            class="hidden sm:inline-block bg-[#701828] hover:bg-[#5a1320] text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-base mt-4"
                         >
                             Get Notified
                         </button>
@@ -188,7 +188,7 @@
                             v-motion
                             :initial="{ opacity: 0, y: 20 }"
                             :visible-once="{ opacity: 1, y: 0, transition: { delay: 400, duration: 400, ease: 'easeOut' } }"
-                            class="text-lg font-bold text-gray-900 mb-6"
+                            class="text-lg font-medium text-gray-900 mb-6"
                         >
                             Westminster Confession of Faith 21.1
                         </h4>
@@ -274,7 +274,21 @@
                             </div>
                         </div>
                     </div>
-
+                    
+                    <!-- Mobile-only Get Notified under preview -->
+                    <div 
+                        v-motion
+                        :initial="{ opacity: 0, y: 20 }"
+                        :visible-once="{ opacity: 1, y: 0, transition: { delay: 960, duration: 400, ease: 'easeOut' } }"
+                        class="sm:hidden mt-4 flex justify-center"
+                    >
+                        <button
+                            @click="openModal"
+                            class="bg-[#701828] hover:bg-[#5a1320] text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-base"
+                        >
+                            Get Notified
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -289,7 +303,7 @@
                     v-motion
                     :initial="{ opacity: 0, y: 30 }"
                     :visible-once="{ opacity: 1, y: 0, transition: { delay: 160, duration: 480, ease: 'easeOut' } }"
-                    class="text-3xl font-bold text-gray-900 mb-6"
+                    class="text-3xl font-medium text-gray-900 mb-6"
                 >
                     Support the Development of This Project
                 </h2>
@@ -325,7 +339,7 @@
                     v-motion
                     :initial="{ opacity: 0, y: 20 }"
                     :visible-once="{ opacity: 1, y: 0, transition: { delay: 360, duration: 480, ease: 'easeOut' } }"
-                    class="text-2xl font-bold text-gray-900 mb-4"
+                    class="text-2xl font-medium text-gray-900 mb-4"
                 >
                     Made By the Creators of Relight
                 </h2>

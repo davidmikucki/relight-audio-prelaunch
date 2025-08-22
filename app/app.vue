@@ -18,7 +18,7 @@
     >
       <div class="text-center px-6 max-w-4xl mx-auto">
         <div class="mb-8">
-          <h1 class="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
+          <h1 class="text-5xl md:text-7xl font-medium text-white mb-8 leading-tight">
             <span
               v-motion
               :initial="{ opacity: 0, y: 60, scale: 0.9 }"
@@ -58,7 +58,7 @@
             :initial="{ opacity: 0, scale: 0.9 }"
             :enter="{ opacity: 1, scale: 1, transition: { delay: 960, duration: 480, ease: 'backOut' } }"
             @click="openModal"
-            class="bg-[#701828] hover:bg-[#5a1320] text-white font-semibold py-4 px-12 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 text-lg"
+            class="bg-[#701828] hover:bg-[#5a1320] text-white font-medium py-4 px-12 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 text-lg"
           >
             Get Notified
           </button>
@@ -67,7 +67,7 @@
             :initial="{ opacity: 0, scale: 0.9 }"
             :enter="{ opacity: 1, scale: 1, transition: { delay: 1120, duration: 480, ease: 'backOut' } }"
             href="#relight-info" 
-            class="border-2 border-white text-white hover:bg-white hover:text-black font-semibold py-4 px-12 rounded-xl transition-all duration-300 hover:scale-105 text-lg"
+            class="border-2 border-white text-white hover:bg-white hover:text-black font-medium py-4 px-12 rounded-xl transition-all duration-300 hover:scale-105 text-lg"
           >
             Learn More
           </a>
@@ -106,7 +106,7 @@
               leave-to="opacity-0 scale-95"
             >
               <DialogPanel class="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-8 text-left align-middle shadow-xl transition-all">
-                <DialogTitle as="h3" class="text-2xl font-bold leading-6 text-gray-900 mb-2">
+                <DialogTitle as="h3" class="text-2xl font-medium leading-6 text-gray-900 mb-2">
                   Get Notified When We Launch
                 </DialogTitle>
                 <DialogDescription class="text-gray-600 mb-6">
@@ -153,7 +153,7 @@
                         type="submit"
                         name="subscribe"
                         id="mc-embedded-subscribe"
-                        class="flex-1 bg-[#701828] hover:bg-[#5a1320] text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300"
+                        class="flex-1 bg-[#701828] hover:bg-[#5a1320] text-white font-medium py-3 px-6 rounded-lg transition-all duration-300"
                         :disabled="!isValidEmail"
                         :class="{ 'opacity-50 cursor-not-allowed': !isValidEmail }"
                       >
@@ -161,7 +161,7 @@
                       </button>
                       <button
                         type="button"
-                        class="px-6 py-3 border border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition-all duration-300"
+                        class="px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-all duration-300"
                         @click="closeModal"
                       >
                         Cancel
@@ -271,11 +271,11 @@ useHead({
 
 @layer components {
   .btn-primary {
-    @apply bg-[#701828] hover:bg-[#5a1320] text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
+    @apply bg-[#701828] hover:bg-[#5a1320] text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
   }
   
   .btn-secondary {
-    @apply border-2 border-[#701828] text-[#701828] hover:bg-[#701828] hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300;
+    @apply border-2 border-[#701828] text-[#701828] hover:bg-[#701828] hover:text-white font-medium py-3 px-8 rounded-lg transition-all duration-300;
   }
 }
 
@@ -289,4 +289,5 @@ useHead({
     background-image: url('/Images/relightAudioBackgroundMobile.jpg');
   }
 }
+
 </style>
