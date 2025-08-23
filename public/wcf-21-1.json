@@ -4,533 +4,534 @@
   "words": [
     {
       "word": "The ",
-      "startMs": 140,
-      "endMs": 620
+      "startMs": 80,
+      "endMs": 540
     },
     {
       "word": "light ",
-      "startMs": 620,
-      "endMs": 920
+      "startMs": 540,
+      "endMs": 840
     },
     {
       "word": "of ",
-      "startMs": 920,
-      "endMs": 1100
+      "startMs": 840,
+      "endMs": 1000
     },
     {
       "word": "nature ",
-      "startMs": 1100,
-      "endMs": 1520
+      "startMs": 1000,
+      "endMs": 1380
     },
     {
       "word": "showeth ",
-      "startMs": 1520,
-      "endMs": 2140
+      "startMs": 1380,
+      "endMs": 1940
     },
     {
       "word": "that ",
-      "startMs": 2140,
-      "endMs": 2400
+      "startMs": 1940,
+      "endMs": 2180
     },
     {
       "word": "there ",
-      "startMs": 2400,
-      "endMs": 2600
+      "startMs": 2180,
+      "endMs": 2360
     },
     {
       "word": "is ",
-      "startMs": 2600,
-      "endMs": 2760
+      "startMs": 2360,
+      "endMs": 2500
     },
     {
       "word": "a ",
-      "startMs": 2760,
-      "endMs": 2960
+      "startMs": 2500,
+      "endMs": 2660
     },
     {
       "word": "God, ",
-      "startMs": 2960,
-      "endMs": 3400
+      "startMs": 2660,
+      "endMs": 3120
     },
     {
       "word": "who ",
-      "startMs": 3400,
-      "endMs": 3640
+      "startMs": 3120,
+      "endMs": 3340
     },
     {
       "word": "hath ",
-      "startMs": 3640,
-      "endMs": 3940
+      "startMs": 3340,
+      "endMs": 3580
     },
     {
       "word": "lordship ",
-      "startMs": 3940,
-      "endMs": 4860
+      "startMs": 3580,
+      "endMs": 4360
     },
     {
       "word": "and ",
-      "startMs": 4860,
-      "endMs": 5080
+      "startMs": 4360,
+      "endMs": 4560
     },
     {
       "word": "sovereignty ",
-      "startMs": 5080,
-      "endMs": 5620
+      "startMs": 4560,
+      "endMs": 5020
     },
     {
       "word": "over ",
-      "startMs": 5620,
-      "endMs": 5980
+      "startMs": 5020,
+      "endMs": 5340
     },
     {
       "word": "all; ",
-      "startMs": 5980,
-      "endMs": 6600
+      "startMs": 5340,
+      "endMs": 6240
     },
     {
       "word": "is ",
-      "startMs": 6600,
-      "endMs": 7280
+      "startMs": 6240,
+      "endMs": 6440
     },
     {
       "word": "good, ",
-      "startMs": 7280,
-      "endMs": 7680
+      "startMs": 6440,
+      "endMs": 6760
     },
     {
       "word": "and ",
-      "startMs": 7680,
-      "endMs": 8100
+      "startMs": 6760,
+      "endMs": 7120
     },
     {
       "word": "doeth ",
-      "startMs": 8100,
-      "endMs": 8520
+      "startMs": 7120,
+      "endMs": 7460
     },
     {
       "word": "good ",
-      "startMs": 8520,
-      "endMs": 8780
+      "startMs": 7460,
+      "endMs": 7680
     },
     {
       "word": "unto ",
-      "startMs": 8780,
-      "endMs": 9140
+      "startMs": 7680,
+      "endMs": 7980
     },
     {
       "word": "all; ",
-      "startMs": 9140,
-      "endMs": 9720
+      "startMs": 7980,
+      "endMs": 8420
     },
     {
       "word": "and ",
-      "startMs": 9720,
-      "endMs": 10440
+      "startMs": 8420,
+      "endMs": 9140
     },
     {
       "word": "is ",
-      "startMs": 10440,
-      "endMs": 10560
+      "startMs": 9140,
+      "endMs": 9260
     },
     {
       "word": "therefore ",
-      "startMs": 10560,
-      "endMs": 10980
+      "startMs": 9260,
+      "endMs": 9620
     },
     {
       "word": "to ",
-      "startMs": 10980,
-      "endMs": 11200
+      "startMs": 9620,
+      "endMs": 9840
     },
     {
       "word": "be ",
-      "startMs": 11200,
-      "endMs": 11440
+      "startMs": 9840,
+      "endMs": 10100
     },
     {
       "word": "feared, ",
-      "startMs": 11440,
-      "endMs": 12080
+      "startMs": 10100,
+      "endMs": 10620
     },
     {
       "word": "loved, ",
-      "startMs": 12080,
-      "endMs": 12980
+      "startMs": 10620,
+      "endMs": 11380
     },
     {
       "word": "praised, ",
-      "startMs": 12980,
-      "endMs": 14020
+      "startMs": 11380,
+      "endMs": 12320
     },
     {
       "word": "called ",
-      "startMs": 14020,
-      "endMs": 14520
+      "startMs": 12320,
+      "endMs": 12760
     },
     {
       "word": "upon, ",
-      "startMs": 14520,
-      "endMs": 15260
+      "startMs": 12760,
+      "endMs": 13400
     },
     {
       "word": "trusted ",
-      "startMs": 15260,
-      "endMs": 15900
+      "startMs": 13400,
+      "endMs": 13920
     },
     {
       "word": "in, ",
-      "startMs": 15900,
-      "endMs": 16340
+      "startMs": 13920,
+      "endMs": 14320
     },
     {
       "word": "and ",
-      "startMs": 16340,
-      "endMs": 16840
+      "startMs": 14320,
+      "endMs": 14760
     },
     {
       "word": "served ",
-      "startMs": 16840,
-      "endMs": 17340
+      "startMs": 14760,
+      "endMs": 15140
     },
     {
       "word": "with ",
-      "startMs": 17340,
-      "endMs": 17580
+      "startMs": 15140,
+      "endMs": 15380
     },
     {
       "word": "all ",
-      "startMs": 17580,
-      "endMs": 17880
+      "startMs": 15380,
+      "endMs": 15620
     },
     {
       "word": "the ",
-      "startMs": 17880,
-      "endMs": 18100
+      "startMs": 15620,
+      "endMs": 15820
     },
     {
       "word": "heart, ",
-      "startMs": 18100,
-      "endMs": 18480
+      "startMs": 15820,
+      "endMs": 16140
     },
     {
       "word": "and ",
-      "startMs": 18480,
-      "endMs": 18740
+      "startMs": 16140,
+      "endMs": 16400
     },
     {
       "word": "with ",
-      "startMs": 18740,
-      "endMs": 18920
+      "startMs": 16400,
+      "endMs": 16540
     },
     {
       "word": "all ",
-      "startMs": 18920,
-      "endMs": 19220
+      "startMs": 16540,
+      "endMs": 16780
     },
     {
       "word": "the ",
-      "startMs": 19220,
-      "endMs": 19400
+      "startMs": 16780,
+      "endMs": 16960
     },
     {
       "word": "soul, ",
-      "startMs": 19400,
-      "endMs": 19860
+      "startMs": 16960,
+      "endMs": 17400
     },
     {
       "word": "and ",
-      "startMs": 19860,
-      "endMs": 20160
+      "startMs": 17400,
+      "endMs": 17680
     },
     {
       "word": "with ",
-      "startMs": 20160,
-      "endMs": 20300
+      "startMs": 17680,
+      "endMs": 17800
     },
     {
       "word": "all ",
-      "startMs": 20300,
-      "endMs": 20580
+      "startMs": 17800,
+      "endMs": 18040
     },
     {
       "word": "the ",
-      "startMs": 20580,
-      "endMs": 20800
+      "startMs": 18040,
+      "endMs": 18220
     },
     {
       "word": "might. ",
-      "startMs": 20800,
-      "endMs": 21200
+      "startMs": 18220,
+      "endMs": 18640
     },
     {
       "word": "But ",
-      "startMs": 21200,
-      "endMs": 22500
+      "startMs": 18640,
+      "endMs": 19720
     },
     {
       "word": "the ",
-      "startMs": 22500,
-      "endMs": 22680
+      "startMs": 19720,
+      "endMs": 19860
     },
     {
       "word": "acceptable ",
-      "startMs": 22680,
-      "endMs": 23340
+      "startMs": 19860,
+      "endMs": 20400
     },
     {
       "word": "way ",
-      "startMs": 23340,
-      "endMs": 23740
+      "startMs": 20400,
+      "endMs": 20820
     },
     {
       "word": "of ",
-      "startMs": 23740,
-      "endMs": 23980
+      "startMs": 20820,
+      "endMs": 21020
     },
     {
       "word": "worshipping ",
-      "startMs": 23980,
-      "endMs": 24580
+      "startMs": 21020,
+      "endMs": 21600
     },
     {
       "word": "the ",
-      "startMs": 24580,
-      "endMs": 24800
+      "startMs": 21600,
+      "endMs": 21760
     },
     {
       "word": "true ",
-      "startMs": 24800,
-      "endMs": 25180
+      "startMs": 21760,
+      "endMs": 22040
     },
     {
       "word": "God ",
-      "startMs": 25180,
-      "endMs": 25700
+      "startMs": 22040,
+      "endMs": 22520
     },
     {
       "word": "is ",
-      "startMs": 25700,
-      "endMs": 25940
+      "startMs": 22520,
+      "endMs": 22700
     },
     {
       "word": "instituted ",
-      "startMs": 25940,
-      "endMs": 26820
+      "startMs": 22700,
+      "endMs": 23480
     },
     {
       "word": "by ",
-      "startMs": 26820,
-      "endMs": 27060
+      "startMs": 23480,
+      "endMs": 23660
     },
     {
       "word": "himself, ",
-      "startMs": 27060,
-      "endMs": 27720
+      "startMs": 23660,
+      "endMs": 24240
     },
     {
       "word": "and ",
-      "startMs": 27720,
-      "endMs": 28680
+      "startMs": 24240,
+      "endMs": 25080
     },
     {
       "word": "so ",
-      "startMs": 28680,
-      "endMs": 29000
+      "startMs": 25080,
+      "endMs": 25340
     },
     {
       "word": "limited ",
-      "startMs": 29000,
-      "endMs": 29480
+      "startMs": 25340,
+      "endMs": 25740
     },
     {
       "word": "to ",
-      "startMs": 29480,
-      "endMs": 29740
+      "startMs": 25740,
+      "endMs": 25980
     },
     {
       "word": "his ",
-      "startMs": 29740,
-      "endMs": 29980
+      "startMs": 25980,
+      "endMs": 26200
     },
     {
       "word": "own ",
-      "startMs": 30140,
-      "endMs": 30420
+      "startMs": 26200,
+      "endMs": 26580
     },
     {
       "word": "revealed ",
-      "startMs": 30420,
-      "endMs": 31080
+      "startMs": 26580,
+      "endMs": 27120
     },
     {
       "word": "will, ",
-      "startMs": 31080,
-      "endMs": 31640
+      "startMs": 27120,
+      "endMs": 27600
     },
     {
       "word": "that ",
-      "startMs": 31640,
-      "endMs": 32520
+      "startMs": 27600,
+      "endMs": 28340
     },
     {
       "word": "he ",
-      "startMs": 32520,
-      "endMs": 32680
+      "startMs": 28340,
+      "endMs": 28500
     },
     {
       "word": "may ",
-      "startMs": 32680,
-      "endMs": 32840
+      "startMs": 28500,
+      "endMs": 28640
     },
     {
       "word": "not ",
-      "startMs": 32840,
-      "endMs": 33120
+      "startMs": 28640,
+      "endMs": 28880
     },
     {
       "word": "be ",
-      "startMs": 33120,
-      "endMs": 33340
+      "startMs": 28880,
+      "endMs": 29100
     },
     {
       "word": "worshipped ",
-      "startMs": 33340,
-      "endMs": 34000
+      "startMs": 29100,
+      "endMs": 29660
     },
     {
       "word": "according ",
-      "startMs": 34000,
-      "endMs": 34400
+      "startMs": 29660,
+      "endMs": 29940
     },
     {
       "word": "to ",
-      "startMs": 34400,
-      "endMs": 34720
+      "startMs": 29940,
+      "endMs": 30220
     },
     {
       "word": "the ",
-      "startMs": 34720,
-      "endMs": 34900
+      "startMs": 30220,
+      "endMs": 30400
     },
     {
       "word": "imaginations ",
-      "startMs": 34900,
-      "endMs": 35960
+      "startMs": 30400,
+      "endMs": 31400
     },
     {
       "word": "and ",
-      "startMs": 35960,
-      "endMs": 36300
+      "startMs": 31400,
+      "endMs": 31600
     },
     {
       "word": "devices ",
-      "startMs": 36300,
-      "endMs": 36900
+      "startMs": 31600,
+      "endMs": 32100
     },
     {
       "word": "of ",
-      "startMs": 36900,
-      "endMs": 37220
+      "startMs": 32100,
+      "endMs": 32380
     },
     {
       "word": "men, ",
-      "startMs": 37220,
-      "endMs": 37640
+      "startMs": 32380,
+      "endMs": 32780
     },
     {
       "word": "or ",
-      "startMs": 37640,
-      "endMs": 38640
+      "startMs": 32780,
+      "endMs": 33600
     },
     {
       "word": "the ",
-      "startMs": 38640,
-      "endMs": 38820
+      "startMs": 33600,
+      "endMs": 33760
     },
     {
       "word": "suggestions ",
-      "startMs": 38820,
-      "endMs": 39520
+      "startMs": 33760,
+      "endMs": 34480
     },
     {
       "word": "of ",
-      "startMs": 39520,
-      "endMs": 39920
+      "startMs": 34480,
+      "endMs": 34720
     },
     {
       "word": "Satan, ",
-      "startMs": 39920,
-      "endMs": 40680
+      "startMs": 34720,
+      "endMs": 35520
     },
     {
       "word": "under ",
-      "startMs": 40680,
-      "endMs": 41440
+      "startMs": 35520,
+      "endMs": 36040
     },
     {
       "word": "any ",
-      "startMs": 41440,
-      "endMs": 41820
+      "startMs": 36040,
+      "endMs": 36380
     },
     {
       "word": "visible ",
-      "startMs": 41820,
-      "endMs": 42420
+      "startMs": 36380,
+      "endMs": 36880
     },
     {
       "word": "representations ",
-      "startMs": 42420,
-      "endMs": 43560
+      "startMs": 36880,
+      "endMs": 37800
     },
     {
       "word": "or ",
-      "startMs": 43560,
-      "endMs": 44160
+      "startMs": 37800,
+      "endMs": 38360
     },
     {
       "word": "any ",
-      "startMs": 44160,
-      "endMs": 44520
+      "startMs": 38360,
+      "endMs": 38720
     },
     {
       "word": "other ",
-      "startMs": 44520,
-      "endMs": 44840
+      "startMs": 38720,
+      "endMs": 39020
     },
     {
       "word": "way ",
-      "startMs": 44840,
-      "endMs": 45260
+      "startMs": 39020,
+      "endMs": 39420
     },
     {
       "word": "not ",
-      "startMs": 45260,
-      "endMs": 45620
+      "startMs": 39420,
+      "endMs": 39720
     },
     {
       "word": "prescribed ",
-      "startMs": 45620,
-      "endMs": 46460
+      "startMs": 39720,
+      "endMs": 40420
     },
     {
       "word": "in ",
-      "startMs": 46460,
-      "endMs": 46680
+      "startMs": 40420,
+      "endMs": 40640
     },
     {
       "word": "the ",
-      "startMs": 46680,
-      "endMs": 46860
+      "startMs": 40640,
+      "endMs": 40780
     },
     {
       "word": "Holy ",
-      "startMs": 46860,
-      "endMs": 47280
+      "startMs": 40780,
+      "endMs": 41200
     },
     {
       "word": "Scripture.",
-      "startMs": 47280,
-      "endMs": 47920
+      "startMs": 41200,
+      "endMs": 41700
     }
-  ]
+  ],
+  "durationMs": 41700
 }
