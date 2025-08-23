@@ -1,6 +1,6 @@
 <template>
-    <section id="relight-info" class="bg-white py-16">
-        <div class="max-w-6xl mx-auto px-6">
+    <section id="relight-info" class="bg-white py-16 overflow-x-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
             <!-- Main Title -->
             <div v-motion :initial="{ opacity: 0, y: 60 }"
@@ -8,17 +8,17 @@
                 class="text-center mb-16">
                 <h1 v-motion :initial="{ opacity: 0, y: 40, scale: 0.95 }"
                     :visible-once="{ opacity: 1, y: 0, scale: 1, transition: { delay: 160, duration: 640, ease: 'easeOut' } }"
-                    class="text-4xl md:text-5xl font-medium text-gray-900 mb-6">
+                    class="text-3xl sm:text-4xl md:text-5xl font-medium text-gray-900 mb-6">
                     Relight <span class="text-burgundy">Audio</span>
                 </h1>
                 <h2 v-motion :initial="{ opacity: 0, y: 30 }"
                     :visible-once="{ opacity: 1, y: 0, transition: { delay: 320, duration: 560, ease: 'easeOut' } }"
-                    class="text-2xl md:text-3xl text-gray-700 mb-8">
+                    class="text-xl sm:text-2xl md:text-3xl text-gray-700 mb-8">
                     Using AI Voices to Read Reformed Classics
                 </h2>
                 <p v-motion :initial="{ opacity: 0, y: 20 }"
                     :visible-once="{ opacity: 1, y: 0, transition: { delay: 480, duration: 480, ease: 'easeOut' } }"
-                    class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed text-left">
+                    class="text-base sm:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed text-left px-2">
                     We're leveraging the power of AI voices<a href="#ai-voices-footnote"
                         class="text-burgundy hover:underline">*</a> to take classic reformed books, sermons,
                     confessions, and catechisms—and turn them into something you can listen to anywhere. You can even
@@ -36,12 +36,12 @@
                 </h2>
 
                 <!-- Three Cards Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
 
                     <!-- Free App Card -->
                     <div v-motion :initial="{ opacity: 0, y: 50, scale: 0.95 }"
                         :visible-once="{ opacity: 1, y: 0, scale: 1, transition: { delay: 80, duration: 480, ease: 'easeOut' } }"
-                        class="bg-gray-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow duration-300">
+                        class="bg-gray-50 rounded-xl p-6 sm:p-8 text-center hover:shadow-lg transition-shadow duration-300">
                         <div v-motion :initial="{ opacity: 0, scale: 0.8 }"
                             :visible-once="{ opacity: 1, scale: 1, transition: { delay: 240, duration: 400, ease: 'backOut' } }"
                             class="mb-6">
@@ -62,7 +62,7 @@
                     <!-- Library Card -->
                     <div v-motion :initial="{ opacity: 0, y: 50, scale: 0.95 }"
                         :visible-once="{ opacity: 1, y: 0, scale: 1, transition: { delay: 160, duration: 480, ease: 'easeOut' } }"
-                        class="bg-gray-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow duration-300">
+                        class="bg-gray-50 rounded-xl p-6 sm:p-8 text-center hover:shadow-lg transition-shadow duration-300">
                         <div v-motion :initial="{ opacity: 0, scale: 0.8 }"
                             :visible-once="{ opacity: 1, scale: 1, transition: { delay: 320, duration: 400, ease: 'backOut' } }"
                             class="mb-6">
@@ -84,7 +84,7 @@
                     <!-- Paid Subscription -->
                     <div v-motion :initial="{ opacity: 0, y: 50, scale: 0.95 }"
                         :visible-once="{ opacity: 1, y: 0, scale: 1, transition: { delay: 240, duration: 480, ease: 'easeOut' } }"
-                        class="bg-gray-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow duration-300">
+                        class="bg-gray-50 rounded-xl p-6 sm:p-8 text-center hover:shadow-lg transition-shadow duration-300">
                         <div v-motion :initial="{ opacity: 0, scale: 0.8 }"
                             :visible-once="{ opacity: 1, scale: 1, transition: { delay: 400, duration: 400, ease: 'backOut' } }"
                             class="mb-6">
@@ -107,7 +107,7 @@
 
             <!-- Test Drive Section -->
             <div class="mb-20">
-                <div class="grid lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start max-w-5xl mx-auto">
 
                     <!-- Left Side - Explanation -->
                     <div v-motion :initial="{ opacity: 0, x: -50 }"
@@ -119,7 +119,7 @@
                         </h3>
                         <p v-motion :initial="{ opacity: 0, y: 20 }"
                             :visible-once="{ opacity: 1, y: 0, transition: { delay: 320, duration: 480, ease: 'easeOut' } }"
-                            class="text-lg text-gray-600 leading-relaxed">
+                            class="text-base sm:text-lg text-gray-600 leading-relaxed">
                             The interface isn’t finished yet, but this shows the basic idea. We know AI narration can’t
                             match a professional, but it lets us make many public-domain resources available in audio
                             all in one place—many of which don’t exist in audio format. Our goal is to eventually give
@@ -130,7 +130,7 @@
                         <button v-motion :initial="{ opacity: 0, scale: 0.9 }"
                             :visible-once="{ opacity: 1, scale: 1, transition: { delay: 480, duration: 400, ease: 'backOut' } }"
                             @click="openModal"
-                            class="hidden sm:inline-block bg-[#701828] hover:bg-[#5a1320] text-white font-semibold py-3 px-8 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-base mt-4">
+                            class="hidden sm:inline-block bg-[#701828] hover:bg-[#5a1320] text-white font-semibold py-3 px-6 sm:px-8 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-sm sm:text-base mt-4">
                             Get Notified
                         </button>
                     </div>
@@ -138,7 +138,7 @@
                     <!-- Right Side - Preview -->
                     <div v-motion :initial="{ opacity: 0, x: 50, scale: 0.95 }"
                         :visible-once="{ opacity: 1, x: 0, scale: 1, transition: { delay: 240, duration: 560, ease: 'easeOut' } }"
-                        class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300">
+                        class="bg-gray-50 rounded-xl p-6 sm:p-8 hover:shadow-lg transition-shadow duration-300">
                         <h4 v-motion :initial="{ opacity: 0, y: 20 }"
                             :visible-once="{ opacity: 1, y: 0, transition: { delay: 400, duration: 400, ease: 'easeOut' } }"
                             class="text-lg font-medium text-gray-900 mb-6">
@@ -148,7 +148,7 @@
                         <!-- Text Content -->
                         <div v-motion :initial="{ opacity: 0 }"
                             :visible-once="{ opacity: 1, transition: { delay: 560, duration: 480, ease: 'easeOut' } }"
-                            class="text-gray-700 leading-relaxed freightTextPro">
+                            class="text-gray-700 leading-relaxed freightTextPro overflow-hidden">
                             <template v-for="(wordData, index) in timingData.words" :key="index">
                                 <span :class="{ 'highlighted-word': currentWordIndex === index }">{{
                                     wordData.word.trim() }}</span>{{ wordData.word.slice(wordData.word.trim().length) }}
@@ -222,7 +222,7 @@
             <!-- Support Section -->
             <div v-motion :initial="{ opacity: 0, y: 60, scale: 0.95 }"
                 :visible-once="{ opacity: 1, y: 0, scale: 1, transition: { duration: 640, ease: 'easeOut' } }"
-                class="text-center bg-gray-50 rounded-xl p-12 hover:shadow-lg transition-shadow duration-300">
+                class="text-center bg-gray-50 rounded-xl p-8 sm:p-12 hover:shadow-lg transition-shadow duration-300">
                 <h2 v-motion :initial="{ opacity: 0, y: 30 }"
                     :visible-once="{ opacity: 1, y: 0, transition: { delay: 160, duration: 480, ease: 'easeOut' } }"
                     class="text-3xl font-medium text-gray-900 mb-6">
@@ -230,7 +230,7 @@
                 </h2>
                 <p v-motion :initial="{ opacity: 0, y: 20 }"
                     :visible-once="{ opacity: 1, y: 0, transition: { delay: 320, duration: 480, ease: 'easeOut' } }"
-                    class="text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    class="text-base sm:text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed px-2">
                     If you're as eager to see this project get off the ground as we are, you can volunteer to help
                     support its development ahead of time through the link below. We appreciate anything you can give,
                     even if it's just a dollar.
@@ -238,7 +238,7 @@
                 <a v-motion :initial="{ opacity: 0, scale: 0.9 }"
                     :visible-once="{ opacity: 1, scale: 1, transition: { delay: 480, duration: 400, ease: 'backOut' } }"
                     href="https://relight.app/support-us#waysToSupportArticle" target="_blank" rel="noopener noreferrer"
-                    class="inline-block bg-burgundy hover:bg-burgundy-dark text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 hover:scale-105 text-lg">
+                    class="inline-block bg-burgundy hover:bg-burgundy-dark text-white font-semibold py-4 px-6 sm:px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 hover:scale-105 text-base sm:text-lg">
                     Support Relight
                 </a>
             </div>
@@ -254,7 +254,7 @@
                 </h2>
                 <p v-motion :initial="{ opacity: 0, y: 15 }"
                     :visible-once="{ opacity: 1, y: 0, transition: { delay: 520, duration: 480, ease: 'easeOut' } }"
-                    class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed px-2">
                     We're same husband and wife team that make the
                     <a href="https://relight.app" target="_blank" rel="noopener noreferrer"
                         class="text-burgundy hover:underline font-medium">Relight study app</a>.
@@ -405,8 +405,15 @@ const openModal = () => {
 
 .freightTextPro {
     font-family: freight-text-pro, serif;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 1.65;
+    word-break: break-word;
+}
+
+@media (min-width: 640px) {
+    .freightTextPro {
+        font-size: 1.3rem;
+    }
 }
 
 .highlighted-word {

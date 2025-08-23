@@ -3,22 +3,22 @@
     v-motion
     :initial="{ opacity: 0 }"
     :enter="{ opacity: 1, transition: { duration: 480, ease: 'easeOut' } }"
-    class="bg-white"
+    class="bg-white overflow-x-hidden"
   >
     <NuxtRouteAnnouncer />
     
     <!-- Hero Section -->
     <main 
-      class="hero relative flex items-center justify-center min-h-screen"
+      class="hero relative flex items-center justify-center min-h-screen overflow-hidden"
       :style="{ 
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center 90%'
       }"
     >
-      <div class="text-center px-6 max-w-4xl mx-auto">
+      <div class="text-center px-4 sm:px-6 max-w-4xl mx-auto w-full">
         <div class="mb-8">
-          <h1 class="text-5xl md:text-7xl font-medium text-white mb-8 leading-tight">
+          <h1 class="text-4xl sm:text-5xl md:text-7xl font-medium text-white mb-8 leading-tight">
             <span
               v-motion
               :initial="{ opacity: 0, y: 60, scale: 0.9 }"
@@ -41,7 +41,7 @@
             v-motion
             :initial="{ opacity: 0, y: 40 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: 480, duration: 640, ease: 'easeOut' } }"
-            class="text-xl md:text-2xl text-white mb-8 leading-relaxed max-w-3xl mx-auto"
+            class="text-lg sm:text-xl md:text-2xl text-white mb-8 leading-relaxed max-w-3xl mx-auto px-2"
           >
             Listen to reformed audiobooks, sermons, confessions, and catechisms.
           </p>
@@ -51,14 +51,14 @@
           v-motion
           :initial="{ opacity: 0, y: 40 }"
           :enter="{ opacity: 1, y: 0, transition: { delay: 800, duration: 640, ease: 'easeOut' } }"
-          class="flex flex-col sm:flex-row gap-6 justify-center items-center mt-10"
+          class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mt-10 px-4 w-full"
         >
           <button
             v-motion
             :initial="{ opacity: 0, scale: 0.9 }"
             :enter="{ opacity: 1, scale: 1, transition: { delay: 960, duration: 480, ease: 'backOut' } }"
             @click="openModal"
-            class="bg-[#701828] hover:bg-[#5a1320] text-white font-medium py-4 px-12 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 text-lg"
+            class="bg-[#701828] hover:bg-[#5a1320] text-white font-medium py-4 px-8 sm:px-12 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 text-base sm:text-lg w-full sm:w-auto max-w-xs"
           >
             Get Notified
           </button>
@@ -67,7 +67,7 @@
             :initial="{ opacity: 0, scale: 0.9 }"
             :enter="{ opacity: 1, scale: 1, transition: { delay: 1120, duration: 480, ease: 'backOut' } }"
             href="#relight-info" 
-            class="border-2 border-white text-white hover:bg-white hover:text-black font-medium py-4 px-12 rounded-xl transition-all duration-300 hover:scale-105 text-lg"
+            class="border-2 border-white text-white hover:bg-white hover:text-black font-medium py-4 px-8 sm:px-12 rounded-xl transition-all duration-300 hover:scale-105 text-base sm:text-lg w-full sm:w-auto max-w-xs"
           >
             Learn More
           </a>
