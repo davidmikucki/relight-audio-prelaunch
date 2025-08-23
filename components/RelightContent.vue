@@ -22,7 +22,7 @@
                     We're leveraging the power of AI voices<a href="#ai-voices-footnote"
                         class="text-burgundy hover:underline">*</a> to take classic reformed books, sermons,
                     confessions, and catechisms—and turn them into something you can listen to anywhere. You can even
-                    <strong>read-along</strong> with each word being highlighted as it's spoken. <a
+                    <strong>read along</strong> with each word being highlighted as it's spoken. <a
                         href="#testDrive">See sample below</a>.
                 </p>
             </div>
@@ -77,7 +77,7 @@
                             Having fun will be even less hard if you’ve got a library card. Through your local library,
                             you’ll (hopefully) be able to access many, if not all, of our titles for free using the
                             Hoopla or Libby
-                            app.
+                            app. 
                         </p>
                     </div>
 
